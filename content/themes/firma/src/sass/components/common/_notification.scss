@@ -1,0 +1,81 @@
+.f-notification {
+  position: relative;
+  z-index: 2;
+}
+
+.f-notification__content {
+  display: flex;
+  position: relative;
+  min-height: 3.125rem;
+
+  &.success {
+    color: var(--success-text-color);
+    background-color: var(--success-background-color);
+  }
+}
+
+.f-notification__text {
+  color: inherit;
+  line-height: 1.6;
+  letter-spacing: 0.0125rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem 3.75rem 1rem 1.25rem;
+  position: relative;
+  z-index: 1;
+
+  @include respond-to('medium') {
+    font-size: 0.8125rem;
+    padding: 1rem 3.75rem 1rem;
+  }
+}
+
+.f-notification__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: inherit;
+  width: 2.9375rem;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  z-index: 2;
+  @include transform(translateY(-50%));
+  @include transition(all ease 0.1s);
+
+  @include respond-to('medium') {
+    right: 1.25rem;
+  }
+
+  &:focus {
+    outline: 0;
+    @include bs(0 0 0 0.1875rem var(--focus-color));
+  }
+
+  span {
+    color: inherit;
+    font-size: 1.125rem;
+  }
+}
+
+.rtl {
+  .f-notification__text {
+    padding-left: 3.75rem;
+    padding-right: 1.25rem;
+  }
+
+  .f-notification__button {
+    right: auto;
+    left: 0;
+
+    @include respond-to('medium') {
+      right: auto;
+      left: 1.25rem;
+    }
+  }
+}

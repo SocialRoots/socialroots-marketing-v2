@@ -1,0 +1,7 @@
+{
+  "active-version": "5.45.1",
+  "cli-version": "1.24.0",
+  "channel": "stable",
+  "name": "socialroots-io",
+  "running": "development"
+}

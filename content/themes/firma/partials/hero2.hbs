@@ -1,0 +1,34 @@
+{{!--
+  This template renders the hero in the home page.
+--}}
+
+<div class="section-grey-wash">
+<section class="landing-section">
+
+    <div class="f-hero__content">
+        <div class="f-hero__text-container">
+            <h3 style="font-size:1.8rem;color:#402286;padding-bottom:0;margin-bottom:-20px;">Socialroots</h3>
+            <div class="f-hero__text-wrapper">
+                <h2 class="f-hero__title">Cross-group <br /> collaboration, simplified.</h2>
+                {{#if @site.description}}
+                    <p class="f-hero__description">{{@site.description}}</p>
+                {{/if}}
+                <a
+                        href="{{@site.url}}/#early-access"
+                        class="f-button__hero f-button"
+                >
+                    {{t "Get early access"}}
+                    <span class="icon-arrow-right f-hero_" aria-hidden="true"></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="f-hero__image-container">
+        </div>
+        <div class="f-hero__circles1"></div>
+        {{> major-partners-badge hero=true}}
+    </div>
+
+</section>
+    <div class="f-hero__circles2"></div>
+</div>
