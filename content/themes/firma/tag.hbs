@@ -24,7 +24,7 @@ into the {body} of the default.hbs template --}}
 <div class="f-main-container">
   {{> header}}
   <div
-    class="f-standard-container {{#if @site.members_enabled}}has-newsletter{{/if}}"
+    class="f-standard-container {{#if @labs.members}}has-newsletter{{/if}}"
   >
     <main class="f-standard-wrapper" role="main">
       {{!-- Everything inside the #tag tags pulls data from the tag --}}
@@ -59,7 +59,7 @@ into the {body} of the default.hbs template --}}
     </main>
     {{> blob-shape alt_version="true"}}
   </div>
-  {{#if @site.members_enabled}}
+  {{#if @labs.members}}
     <section class="f-newsletter" aria-label="{{t "Newsletter form"}}">
       <div class="f-newsletter__wrapper">
         {{> "newsletter-form"}}

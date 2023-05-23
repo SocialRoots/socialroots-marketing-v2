@@ -87,7 +87,7 @@
       <div class="f-mobile-menu__footer">
         <div class="f-mobile-menu__footer-inner">
           <div class="f-mobile-menu__footer-side">
-            {{#if @site.members_enabled}}
+            {{#if @labs.members}}
               {{#if @member}}
                 <div class="f-mobile-menu__account">
                   {{> avatar 
@@ -132,7 +132,7 @@
                 </a>
               {{/if}}
             {{/if}}
-            {{^if @site.members_enabled}}
+            {{^if @labs.members}}
               {{#if @site.facebook}}
                 <a
                   href="{{facebook_url @site.facebook}}"

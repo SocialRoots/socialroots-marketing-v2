@@ -3,11 +3,11 @@
 --}}
 
 <article
-  class="f-recent-article {{post_class}} {{#if @site.members_enabled}}post-access-{{visibility}}{{/if}} {{#if @last}}last{{/if}}"
+  class="f-recent-article {{post_class}} {{#if @labs.members}}post-access-{{visibility}}{{/if}} {{#if @last}}last{{/if}}"
 >
   <a href="{{url}}" class="f-recent-article__link">
     <div class="f-recent-article__info">
-      {{#if @site.members_enabled}}
+      {{#if @labs.members}}
         <span class="f-access-tag border in-recent-article {{visibility}}">
           {{t visibility}}
         </span>

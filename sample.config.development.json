@@ -9,9 +9,9 @@
     "connection": {
       "host": "127.0.0.1",
       "port": 3306,
-      "user": "<MYSQL_USERNAME>",
-      "password": "<MYSQL_PASSWORD>",
-      "database": "<DATABASE_NAME>"
+      "user": "root",
+      "password": "Satyam@1994",
+      "database": "samplesrghost"
     }
   },
   "mail": {
@@ -22,6 +22,6 @@
   },
   "process": "local",
   "paths": {
-    "contentPath": "<CONTENT_DIRECTORY_PATH>"
+    "contentPath": "/Users/satyam/sr/socialroots-marketing-v2/content"
   }
 }

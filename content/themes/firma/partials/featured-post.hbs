@@ -3,7 +3,7 @@
 --}}
 
 <article
-  class="f-featured-post {{post_class}} {{#if @site.members_enabled}}post-access-{{visibility}}{{/if}} {{^if feature_image}}no-image{{/if}} {{#if @last}}last{{/if}}"
+  class="f-featured-post {{post_class}} {{#if @labs.members}}post-access-{{visibility}}{{/if}} {{^if feature_image}}no-image{{/if}} {{#if @last}}last{{/if}}"
 >
   {{#if feature_image}}
     <div class="f-featured-post__image">
@@ -26,7 +26,7 @@
       <div class="f-post-card__body__top">
         <div class="f-post-card__header in-featured-post">
           <span class="f-featured-post__label">{{t "Featured"}}</span>
-          {{#if @site.members_enabled}}
+          {{#if @labs.members}}
             <span class="f-access-tag in-post-card-header {{visibility}}">
               {{t visibility}}
             </span>

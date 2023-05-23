@@ -1,1 +1,4 @@
+.idea
+.vscode
 content/logs
+node_modules

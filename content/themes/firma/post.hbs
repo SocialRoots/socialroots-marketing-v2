@@ -24,7 +24,7 @@ into the {body} of the default.hbs template --}}
 <div class="f-main-container">
   {{> header}}
   <main
-    class="f-standard-container {{#if @site.members_enabled}}has-newsletter{{/if}} js-standard-container"
+    class="f-standard-container {{#if @labs.members}}has-newsletter{{/if}} js-standard-container"
     role="main"
   >
     {{!-- Everything inside the #post tags pulls data from the post --}}
@@ -98,7 +98,7 @@ into the {body} of the default.hbs template --}}
     {{/post}}
     {{> blob-shape}}
   </main>
-  {{#if @site.members_enabled}}
+  {{#if @labs.members}}
     <section class="f-newsletter" aria-label="{{t "Newsletter form"}}">
       <div class="f-newsletter__wrapper">
         {{> "newsletter-form"}}
