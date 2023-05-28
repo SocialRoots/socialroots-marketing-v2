@@ -1,0 +1,17 @@
+<section class="landing-information-blocks">
+    <h3 class="landing-section-title">Our Partners</h3>
+    <p class="landing-section-message">
+        We’re working with aligned organizations to change the way networks organize and collaborate. Join us!
+    </p>
+    <div class="landing-partners-card-section">
+        <!-- Updated 3/6/23 -->
+    {{#get "posts" include="tags"}}
+        {{#foreach posts}}
+            <!-- Post {{title}}, has tags: {{tags}} -->
+            {{#has tag="partners"}}
+                {{> landing-partner-card}}
+            {{/has}}
+        {{/foreach}}
+    {{/get}}
+    </div>
+</section>

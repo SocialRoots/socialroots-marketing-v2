@@ -1,0 +1,8 @@
+{
+  "name": "socialroots-marketing-site",
+  "author": "Socialroots team",
+  "scripts": {
+    "install": "cd versions/5.45.1 && yarn install || cd versions/5.45.1 && yarn install",
+    "start": "yarn install"
+  }
+}

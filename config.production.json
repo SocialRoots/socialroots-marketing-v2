@@ -1,0 +1,29 @@
+{
+  "url": "http://13.48.110.194/",
+  "server": {
+    "port": 2369,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "socialroots-marketing-db.ckxh38sxwjdl.eu-north-1.rds.amazonaws.com",
+      "user": "admin",
+      "password": "v2J7r6HYnR",
+      "database": "marketingdb"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/www/socialroots.io/content"
+  }
+}

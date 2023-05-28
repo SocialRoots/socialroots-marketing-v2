@@ -1,0 +1,96 @@
+{{!--
+  This template renders different types of notifications.
+--}}
+
+<div
+  class="f-notification"
+  role="alert"
+  x-data="notification('{{@site.url}}')"
+  x-init="checkForNotification"
+  x-show.transition.in="show"
+  x-cloak
+>
+  <div class="f-notification__content success">
+    <template x-if="subscribe">
+      <p class="f-notification__text">
+        {{t "🎉 Great! You've successfully subscribed."}}
+      </p>
+    </template>
+    <template x-if="signup">
+      <p class="f-notification__text">
+        {{t "🎉 Great! Next, complete checkout for full access."}}
+      </p>
+    </template>
+    <template x-if="signin">
+      <p class="f-notification__text">
+        {{t "👋 Welcome back! You've successfully signed in."}}
+      </p>
+    </template>
+    <template x-if="checkout">
+      <p class="f-notification__text">
+        {{t "🎉 Success! Your account is fully activated, you now have access to all content."}}
+      </p>
+    </template>
+    <button
+      class="f-notification__button no-appearance"
+      aria-label="{{t "Close notification"}}"
+      @click="close"
+    >
+      <span class="icon-close" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<script>
+  window.notification = (ghostHost) => {
+    return {
+      show: false,
+      subscribe: false,
+      signup: false,
+      signin: false,
+      checkout: false,
+      close() { this.show = false },
+      checkForNotification() {
+        const action = this.getParameterByName('action')
+        const stripe = this.getParameterByName('stripe')
+
+        if (stripe === 'success') {
+          this.show = true
+          this.checkout = true
+          return
+        }
+
+        if (!action) return
+
+        if (action === 'signup') {
+          window.location = `${ghostHost}/signup/?action=checkout`
+          return
+        }
+
+        this.show = true
+
+        if (action === 'subscribe') {
+          this.subscribe = true
+        }
+        if (action === 'checkout') {
+          this.signup = true
+        }
+        if (action === 'signin') {
+          this.signin = true
+        }
+      },
+      getParameterByName(name, url) {
+        if (!url) url = window.location.href
+
+        name = name.replace(/[\[\]]/g, '\\$&')
+        const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`)
+        const results = regex.exec(url)
+
+        if (!results) return null
+        if (!results[2]) return ''
+
+        return decodeURIComponent(results[2].replace(/\+/g, ' '))
+      }
+    }
+  }
+</script>

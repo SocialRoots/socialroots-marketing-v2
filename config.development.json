@@ -1,0 +1,27 @@
+{
+  "url": "http://localhost:2350/",
+  "server": {
+    "port": 2350,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "password": "Satyam@1994",
+      "database": "samplesrghost"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": ["file", "stdout"]
+  },
+  "process": "local",
+  "paths": {
+    "contentPath": "/Users/satyam/sr/socialroots-marketing-v2/content"
+  }
+}

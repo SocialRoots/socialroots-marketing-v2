@@ -1,0 +1,412 @@
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+
+.landing-main {
+    position:relative;
+}
+@media only screen and (min-width: 48rem) {
+    .landing-main {
+        position:center;
+    }
+}
+.landing-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-grey-wash {
+    width:100%;
+    position:relative;
+    background-color:#F3F4F6;
+    overflow:hidden;
+}
+
+.f-hero__content {
+    width:90%;
+    margin-top:5%;
+    margin-left: 10%;
+    padding-bottom:50px;
+    /*padding-bottom:150px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap:wrap;
+}
+
+
+
+.f-hero__text-container {
+    width:80%;
+    margin-right:20%;
+    overflow: hidden;
+    height:360px;
+}
+
+.f-hero__title{
+    font-size: 3rem;
+}
+
+.f-button__hero {
+    border-radius:5px !important;
+    border-color: #542DAE;
+    background-color: #542DAE;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.f-hero__description {
+    margin-bottom: 2rem;
+}
+
+.f-hero__image-container {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/Cross-Group+Communication+Image.png');
+    margin-top: 0px;
+    width:80%;
+    margin-right:20%;
+    height:345px;
+
+}
+
+.f-hero__circles1 {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/Circles1.png');
+    height: 280px;
+    width: 20%;
+    position: absolute;
+    top: -25px;
+    right: -7%;
+}
+
+.f-hero__circles2 {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/Circles2.png');
+    height: 242px;
+    width: 40%;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+}
+@media only screen and (min-width: 48rem) {
+    .f-hero__content {
+        flex-wrap: nowrap;
+    }
+    .f-hero__text-container {
+        height:580px;
+    }
+    .f-hero__image-container  {
+        height:525px;
+    }
+    .f-hero__circles2 {
+        left: 2%;
+        top:85%;
+    }
+}
+.landing-foursquare {
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+.landing-section-title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.landing-section-message {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.l-foursquare {
+    width:96%;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 48rem) {
+    .l-foursquare {
+        width:46%;
+    }
+    .landing-foursquare__top-left {
+        border-right: 1px solid #d4d4d8;
+        border-bottom: 1px solid #d4d4d8;
+    }
+    .landing-foursquare__top-right {
+        border-bottom: 1px solid #d4d4d8;
+    }
+    .landing-foursquare__bottom-left {
+        border-right: 1px solid #d4d4d8;
+    }
+}
+
+.landing-foursquare__subtitle {
+    text-align: center;
+    font-size:1.3rem;
+}
+.landing-foursquare__paragraph {
+    text-align: center;
+}
+.landing-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width:100%;
+    height: 150px;
+}
+.landing-arrows-up-icon {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/ArrowsupIcon.png');
+}
+
+.landing-checklist-icon {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/ChecklistIcon.png');
+}
+.landing-compass-icon {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/CompassIcon.png');
+}
+.landing-conversation-icon {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/ConversationIcon.png');
+}
+
+
+.landing-information-blocks {
+    width: 100%;
+    background-color: #ffffff;
+    padding-top:2%;
+}
+.landing-double-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.landing-white-background {
+    background-color: #ffffff;
+}
+
+.landing-block__text {
+    width:95%;
+    padding:5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.landing-block__subtitle {
+    font-size: 1.5rem;
+}
+
+.landing-block__image {
+    width:95%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    height:250px;
+}
+
+@media only screen and (min-width: 48rem) {
+    .landing-information-blocks {
+        background-color: #F3F4F6;
+    }
+    .landing-double-block {
+        padding-top:2%;
+        padding-bottom:2%;
+    }
+    .landing-wrap {
+        flex-direction: row;
+    }
+    .landing-reverse-wrap {
+        flex-direction: row-reverse;
+    }
+    .landing-block__text {
+        width:40%;
+        padding:5%;
+    }
+    .landing-block__image {
+        width:40%;
+        padding:5%;
+        height:450px;
+    }
+    .landing-block__right {
+        margin-right: 10%
+    }
+    .landing-block__left {
+        margin-left: 10%;
+    }
+}
+
+.landing-connections-image {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/ConnectionsImage.png');
+}
+.landing-conversation-image {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/ConversationsImage.png');
+}
+.landing-emails-image {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/EmailIntegrationsImage.png');
+}
+.landing-onboarding-image {
+    background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/OnboardingImage.png');
+}
+.landing-partners-card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:2%;
+    padding-bottom: 2%;
+}
+.landing-partner-card {
+    min-width: 43%;
+    margin-right:2%;
+    margin-top:2%;
+    padding:1%;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-partner-card__url-wrapper {
+    cursor: pointer;
+    margin-right:2%;
+    margin-top:1%;
+    opacity:0.7;
+    transition: opacity 0.5s;
+}
+.landing-partner-card__url-wrapper:hover {
+    opacity: 1;
+}
+
+.landing-partner-card__image {
+    min-height:100px;
+    min-width:135px;
+    max-height:135px;
+}
+
+.landing-partner-card__bg_image {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    min-width:135px;
+    min-height:108px;
+    max-height:135px;
+}
+
+@media only screen and (min-width: 48rem) {
+    .landing-partners-card-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top:2%;
+        padding-bottom: 2%;
+    }
+    .landing-partner-card {
+        min-width: 245px;
+        min-height: 245px;
+        background: #ffffff;
+        box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-partner-card__image {
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        min-width:100%;
+        min-height:108px;
+        max-height:145px;
+    }
+}
+
+.landing-early-access-block {
+    width: 100%;
+    background-color: #542DAE;
+    padding-top:2%;
+    color: #ffffff;
+    padding-bottom:2%;
+}
+
+.landing-section-big-message {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.f-button__early-access {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: #000000;
+    font-size: 1rem;
+    margin-top:5px;
+}
+
+.landing-early-access-sign-up-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.landing-early-access-form-column {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0px;
+}
+.landing-early-access-email {
+    height: 2.3rem;
+    width: 20rem;
+    color: #000000;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 48rem) {
+    .landing-early-access-form-column {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: -23px;
+    }
+    .landing-early-access-email {
+        height: 2.3rem;
+        width: 20rem;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    .f-button__early-access {
+        margin-top:0px;
+    }
+}
