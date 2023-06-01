@@ -4,3 +4,4 @@
 logs
 node_modules
 yarn-error.log
+config.production.json
