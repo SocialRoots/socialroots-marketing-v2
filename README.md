@@ -27,7 +27,8 @@
 # How to import Socialroots.io data on local machine
 
 1. Go to [https://www.socialroots.io/ghost/#/settings/labs](https://www.socialroots.io/ghost/#/settings/labs). To access this, you must have ghost credentials. connect with team if you don't have already.
-2. Click on `Export you content` and save the JSON file on your machine.
+2. Click on `Export your content` and save the JSON file on your machine.
 
 3. Now go to your local machine app admin [[localhost:2367/ghost](http://localhost:2367/ghost/#/settings/labs)](http://localhost:2367/ghost/#/settings/labs) and click on import content to import the file.
 
+4. In your local machine settings, open Design and open 'Themes'. Toggle the 'Advanced' menu at the top of the page to reveal Firma v1.0.1 and Activate this.
