@@ -2616,6 +2616,12 @@ input:checked + .slider:before {
 
 }
 
+.f-major-partners-badge__icon_nsftext {
+  background-image: url('../images/NSFtext-HD.png');
+  margin-right: 2.5vw;
+  padding: 25px;
+}
+
 .f-major-partners-badge__icon_zebras {
     background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/Zebras+Logo+1.png');
 }
