@@ -1,16 +1,16 @@
 {
-  "url": "http://localhost:2350/",
+  "url": "http://localhost:2369/",
   "server": {
-    "port": 2350,
+    "port": 2369,
     "host": "127.0.0.1"
   },
   "database": {
     "client": "mysql",
     "connection": {
       "host": "127.0.0.1",
-      "port": 3306,
+      "port": 3312,
       "user": "root",
-      "password": "Satyam@1994",
+      "password": "peowpeow",
       "database": "samplesrghost"
     }
   },
@@ -18,10 +18,13 @@
     "transport": "Direct"
   },
   "logging": {
-    "transports": ["file", "stdout"]
+    "transports": [
+      "file",
+      "stdout"
+    ]
   },
   "process": "local",
   "paths": {
-    "contentPath": "/Users/satyam/sr/socialroots-marketing-v2/content"
+    "contentPath": "/home/naomi/socialroots/socialroots-marketing-v2/content"
   }
 }

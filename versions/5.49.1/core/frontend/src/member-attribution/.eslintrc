@@ -1,5 +1,8 @@
 {
-    "extends": "../../../../.eslintrc.js",
+    "extends": [
+    "../../../../.eslintrc.js",
+    "prettier"
+    ]
     "env": {
         "browser": true,
         "node": false

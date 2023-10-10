@@ -157,6 +157,10 @@ select {
     text-transform: none
 }
 
+.hover-menu li {
+  color:#542dae;
+}
+
 textarea {
     margin: 0;
     overflow: auto;
@@ -286,10 +290,10 @@ template {
     --loading-color: #fff;
     --highlighting-color: #ff0;
     --button-text-color: #fff;
-    --button-background-color: #471aff;
+    --button-background-color: #542dae;
     --alt-text-color: #333;
     --mask-color: #f6f9fc;
-    --accent-color: #471aff;
+    --accent-color: #542dae;
     --border-color: #ebeaeb;
     --background-color: #fff;
     --background-color-transparent: hsla(0, 0%, 100%, 0);
