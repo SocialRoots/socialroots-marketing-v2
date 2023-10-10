@@ -157,6 +157,10 @@ select {
     text-transform: none
 }
 
+.hover-menu li {
+  color:#542dae;
+}
+
 textarea {
     margin: 0;
     overflow: auto;
@@ -286,10 +290,10 @@ template {
     --loading-color: #fff;
     --highlighting-color: #ff0;
     --button-text-color: #fff;
-    --button-background-color: #471aff;
+    --button-background-color: #542dae;
     --alt-text-color: #333;
     --mask-color: #f6f9fc;
-    --accent-color: #471aff;
+    --accent-color: #542dae;
     --border-color: #ebeaeb;
     --background-color: #fff;
     --background-color-transparent: hsla(0, 0%, 100%, 0);
@@ -2614,6 +2618,12 @@ input:checked + .slider:before {
 .f-major-partners-badge__icon_nsf {
     background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/NSF+Logo+1.png');
 
+}
+
+.f-major-partners-badge__icon_nsftext {
+  background-image: url('../images/NSFtext-HD.png');
+  margin-right: 2.5vw;
+  padding: 25px;
 }
 
 .f-major-partners-badge__icon_zebras {
