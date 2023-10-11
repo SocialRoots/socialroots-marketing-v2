@@ -1820,7 +1820,8 @@ f-desktop-navigation__list > div > a, .f-desktop-navigation__list li > a.nav-no-
 @media only screen and (min-width: 48rem) {
     .f-standard-container {
         padding-top: 6.25rem;
-        padding-bottom: 9.375rem
+        padding-bottom: 9.375rem;
+        padding-left: 3.2rem;
     }
 }
 
