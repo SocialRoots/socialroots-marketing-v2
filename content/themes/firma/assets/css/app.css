@@ -1821,7 +1821,8 @@ f-desktop-navigation__list > div > a, .f-desktop-navigation__list li > a.nav-no-
     .f-standard-container {
         padding-top: 6.25rem;
         padding-bottom: 9.375rem;
-        padding-left: 3.2rem;
+        padding-left: 2.6rem;
+        padding-right: 2.6rem;
     }
 }
 
