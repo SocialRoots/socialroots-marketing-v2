@@ -2311,7 +2311,7 @@ f-desktop-navigation__list > div > a, .f-desktop-navigation__list li > a.nav-no-
 @media only screen and (min-width: 64rem) {
     .f-footer__logo-container {
         flex: 1;
-        margin-bottom: 0
+        margin-bottom: 1%
     }
 }
 
@@ -2476,7 +2476,7 @@ a.footer-title:hover {
 
 .f-footer__company-message p {
     font-size: 0.8rem;
-    min-width: 34%;
+    min-width: 40%;
     margin-left: 2%;
     margin-bottom:1%;
     color: #1F2937;
