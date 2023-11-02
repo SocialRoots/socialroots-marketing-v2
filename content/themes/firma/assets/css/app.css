@@ -2319,7 +2319,8 @@ f-desktop-navigation__list > div > a, .f-desktop-navigation__list li > a.nav-no-
     .f-footer__nav-container {
         display: flex;
         justify-content: flex-end;
-        flex-shrink: 0
+        flex-shrink: 0;
+        margin-bottom: 1%
     }
 }
 
@@ -2475,7 +2476,7 @@ a.footer-title:hover {
 
 .f-footer__company-message p {
     font-size: 0.8rem;
-    min-width: 45%;
+    min-width: 34%;
     margin-left: 2%;
     margin-bottom:1%;
     color: #1F2937;

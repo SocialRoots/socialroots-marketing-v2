@@ -42,6 +42,27 @@
                 <nav
                         class="f-footer-navigation"
                         role="navigation"
+                        aria-label="{{t "legal information and product disclaimers"}}"
+                        x-ref="legal_information"
+                >
+                <span class="f-footer-navigation__title">
+                    {{t "Legal"}}
+                </span>
+                    <ul class="f-footer-navigation__list">
+                        <li>
+                            <a href="/privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/tos">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="/tos/#disclaimer">Disclaimers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav
+                        class="f-footer-navigation"
+                        role="navigation"
                         aria-label="{{t "Social links in footer"}}"
                         x-ref="social_navigation"
                 >
