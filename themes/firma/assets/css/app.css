@@ -2586,8 +2586,6 @@ input:checked + .slider:before {
     position: absolute;
     top: 650px;
     right: 5%;
-
-
 }
 
 @media only screen and (min-width: 48rem) {
@@ -2605,16 +2603,16 @@ input:checked + .slider:before {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: border 0.2s;
+    /*transition: border 0.2s;*/
 
 }
 
-.f-major-partners-badge__icon:hover {
-    border: 0px #ffffff solid;
-    border-radius: 10px;
-    padding: 2%;
+/*.f-major-partners-badge__icon:hover {*/
+/*    border: 0px #ffffff solid;*/
+/*    border-radius: 10px;*/
+/*    padding: 2%;*/
 
-}
+/*}*/
 
 .f-major-partners-badge__icon_nsf {
     background-image: url('https://socialroots-ghost.s3.amazonaws.com/landing-page-assets/NSF+Logo+1.png');
