@@ -1,9 +1,9 @@
 {
   "active-version": "5.61.1",
-  "cli-version": "1.24.2",
+  "cli-version": "1.25.3",
   "channel": "stable",
   "name": "13-48-110-194",
-  "previous-version": "5.49.1",
-  "node-version": "16.14.2",
+  "previous-version": "5.61.1",
+  "node-version": "18.17.1",
   "running": "development"
 }
