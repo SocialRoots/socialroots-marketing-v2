@@ -1,0 +1,85 @@
+{{!--
+  This template is used for the index page.
+  It can be used also as the home page or the default page.
+--}}
+
+{{!-- This block preloads specific assets for the home page --}}
+{{#contentFor "preload"}}
+  <link rel="preload" href="{{asset "css/home2.css"}}" as="style" />
+{{/contentFor}}
+
+{{!-- This block loads specific styles for the home page --}}
+{{#contentFor "styles"}}
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{asset "css/home2.css"}}"
+    media="screen"
+  />
+{{/contentFor}}
+
+{{!-- The tag below means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{!< default}}
+
+<div class="f-main-container">
+  {{> header }}
+  <main
+    style="margin-bottom:0; padding-bottom:0;"
+    class="f-standard-container {{#is "home"}}in-home landing-main{{/is}}"
+    role="main"
+  >
+    {{#is "home"}}
+        {{> hero2 }}
+        {{> landing-foursquare }}
+        <section  class="landing-information-blocks">
+            <h3 class="landing-section-title">Designed to Enhance Collaboration</h3>
+            <div class="landing-double-block landing-reverse-wrap">
+                <div class="landing-block__image landing-block__right landing-emails-image"></div>
+                <div class="landing-block__text landing-block__left">
+                    <h4 class="landing-block__subtitle">Email integration reduces digital fatigue</h4>
+                    <p class="landing-block__paragraph">
+                        Don’t make your community members sign up for yet another digital tool. Conversations on Socialroots integrate seamlessly with email, keeping everyone on the same page, even if they're not on the same platform.
+                    </p>
+                </div>
+            </div>
+            <div class="landing-double-block landing-wrap landing-white-background">
+                <div class="landing-block__image landing-connections-image landing-block__left"></div>
+                <div class="landing-block__text landing-block__right">
+                    <h4 class="landing-block__subtitle">Connections allow collaboration across networks</h4>
+                    <p class="landing-block__paragraph">
+                        We can’t solve big problems in a vacuum. Socialroots allows your organization to connect with other aligned groups so you can see your whole network, collaborate directly, and maximize your impact.
+
+                    </p>
+                </div>
+            </div>
+            <div class="landing-double-block landing-reverse-wrap">
+                <div class="landing-block__image landing-conversation-image landing-block__right"></div>
+                <div class="landing-block__text landing-block__left">
+                    <h4 class="landing-block__subtitle">Socialroots’ conversations promote aligned action</h4>
+                    <p class="landing-block__paragraph">
+                        Socialroots allows people to commit to action and give updates within the natural flow of a conversation. Next steps are flagged and tracked when and where the conversation happens, instead of getting lost in email threads and task boards.
+                    </p>
+                </div>
+            </div>
+            <div class="landing-double-block landing-wrap landing-white-background">
+                <div class="landing-block__image landing-onboarding-image landing-block__left"></div>
+                <div class="landing-block__text landing-block__right">
+                    <h4 class="landing-block__subtitle">Smart onboarding makes orientation easy</h4>
+                    <p class="landing-block__paragraph">
+                        Your onboarding choices aren’t limited to “generic but unhelpful” or “personalized but time-consuming.” Socialroots welcomes new group members with information and options that are relevant to them, saving you time and helping them to get oriented right away.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Index Page Troubleshooting -->
+        {{#foreach posts}}
+                <!-- Post {{title}}, has tags: {{tags}}-->
+        {{/foreach}}
+        <!-- End Troubleshooting Block -->
+
+        {{> landing-partners }}
+        {{> sendinblue-form }}
+    {{/is}}
+  </main>
+</div>

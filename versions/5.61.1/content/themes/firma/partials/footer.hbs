@@ -1,0 +1,115 @@
+{{!--
+  This footer template is shared across all the pages.
+--}}
+<div class="section-grey-wash">
+<footer class="f-footer" x-data="footer()" x-init="checkSocialLinks">
+    <div class="f-footer__wrapper">
+        <div class="f-footer__columns-container">
+            <div class="f-footer__logo-container">
+                <div class="f-footer__logo-bg">
+                    {{> logo logo_class="in-footer"}}
+                </div>
+            </div>
+            <div class="f-footer__company-message">
+                <p>We are a worker-owned software cooperative building a data commons that enables you to network,
+                    collaborate, and effectively communicate across groups.</p>
+            </div>
+            <div style="margin-left:5%;" class="f-footer__nav-container">
+                <nav
+                        class="f-footer-navigation"
+                        role="navigation"
+                        aria-label="{{t "who we are links in footer"}}"
+                        x-ref="who_we_are_navigation"
+                >
+                <span class="f-footer-navigation__title">
+                    {{t "Who we are"}}
+                </span>
+                    <ul class="f-footer-navigation__list">
+                        <li>
+                            <a href="/we-are-socialroots">Story</a>
+                        </li>
+                        <li>
+                            <a href="/principles">Principles</a>
+                        </li>
+                        <li>
+                            <a href="/team">Team</a>
+                        </li>
+                        <li>
+                            <a href="/privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav
+                        class="f-footer-navigation"
+                        role="navigation"
+                        aria-label="{{t "Social links in footer"}}"
+                        x-ref="social_navigation"
+                >
+            <span class="f-footer-navigation__title">
+                {{t "Social"}}
+            </span>
+                    <ul class="f-footer-navigation__list" x-ref="social_list">
+                        {{#if @site.facebook}}
+                            <li>
+                                <a href="{{facebook_url @site.facebook}}" class="social">
+                                    <span class="icon-facebook" aria-hidden="true"></span>
+                                    Facebook
+                                </a>
+                            </li>
+                        {{/if}}
+                        {{#if @site.twitter}}
+                            <li>
+                                <a href="{{twitter_url @site.twitter}}" class="social">
+                                    <span class="icon-twitter" aria-hidden="true"></span>
+                                    Twitter
+                                </a>
+                            </li>
+                        {{/if}}
+                        <li>
+                            <a href="https://www.linkedin.com/company/wickedcoop" class="social">
+                                <span class="icon-linkedin" aria-hidden="true"></span>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav
+                        class="f-footer-navigation"
+                        role="navigation"
+                >
+                    <a href="/tag/partners/" class="footer-title">
+                    <span class="f-footer-navigation__title">
+                        {{t "Partners"}}
+                    </span>
+                    </a>
+                    <a href="/contact/" class="footer-title">
+                    <span class="f-footer-navigation__title">
+                        {{t "Contact"}}
+                    </span>
+                    </a>
+                </nav>
+
+            </div>
+        </div>
+        <div style="display:flex;flex-direction:row;justify-content: center;align-items: center">
+            <div class="f-footer__copyright-container">
+                <p class="f-footer-copyright">Wicked Coop, LCA &copy; {{date format="YYYY"}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="f-footer__circles3"></div>
+    {{> major-partners-badge }}
+</footer>
+</div>
+<script>
+    window.footer = () => {
+        return {
+            checkSocialLinks() {
+                if (this.$refs.social_list.children.length === 0) {
+                    this.$refs.social_navigation.remove()
+                }
+            }
+        }
+    }
+</script>
